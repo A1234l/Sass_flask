@@ -120,11 +120,11 @@ class Sass(db.Model):
         return {
             "id": self.id,
             "username": self.username,
-            "response 1": self.question1,
-            "response 2": self.question2,
-            "response 3": self.question3,
-            "response 4": self.question4,
-            "date of response": self.doquestion
+            "question1": self.question1,
+            "question2": self.question2,
+            "question3": self.question3,
+            "question4": self.question4,
+            "doquestion": self.doquestion
         }
 
     # CRUD update: updates user name, password, phone
