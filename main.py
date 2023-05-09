@@ -20,6 +20,9 @@ from api.sass import sasses_bp
 # setup App pages
 from projects.projects import app_projects # Blueprint directory import projects definition
 
+# Initialize the SQLAlchemy object to work with the Flask app instance
+db.init_app(app)
+
 # register URIs
 app.register_blueprint(joke_api) # register api routes
 app.register_blueprint(covid_api) # register api routes
@@ -43,7 +46,6 @@ def stub():
 
 @app.before_first_request
 def activate_job():  # activate these items 
-    db.init_app(app)
     initJokes()
     initSasses()
     initPlayers()
