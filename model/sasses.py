@@ -164,7 +164,7 @@ def initSasses():
         u1 = Sass(username='Bob', question1='hi', question2='test', question3='no you', question4='I dont know',doquestion=date(1945, 9, 2))
         u2 = Sass(username='Jeff', question1='hello', question2='help I dont know', question3='answer is 1', question4='this is so hard',doquestion=date(2020, 5, 15))
         u3 = Sass(username='Test', question1='testing', question2='more testing', question3='even more testing', question4='the final testing',doquestion=date(2011, 10, 31))
-        u4 = Sass(username='Hello1234', question1='Answer is 12345', question2='ahhhh', question3='please I dont wanna do this anymore', question4='Finally a question I know',doquestion=date(2023, 4, 18))
+        u4 = Sass(username='Hello1234', question1='Answer is 12345', question2='ahhhh', question3='please', question4='Finally a question I know',doquestion=date(2023, 4, 18))
 
         users = [u1, u2, u3, u4]
 
